@@ -10,7 +10,7 @@ import (
 )
 
 type responsePayload struct {
-	IsmercuryInRetrograde bool `json:"isMercuryInRetrograde"`
+	IsMercuryInRetrograde bool `json:"isMercuryInRetrograde"`
 }
 
 type errorPayload struct {
@@ -31,7 +31,7 @@ func retrogradeHandler(w http.ResponseWriter, r *http.Request) {
 		}
 	} else {
 		payload = &responsePayload{
-			IsmercuryInRetrograde: ok,
+			IsMercuryInRetrograde: ok,
 		}
 	}
 
