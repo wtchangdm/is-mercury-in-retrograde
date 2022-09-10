@@ -11,14 +11,14 @@ func Do() {
 	ok, err := m.Retrograde()
 
 	if err != nil {
-		fmt.Printf("Looks like we don't know whether mercury is in retrograde: %v\n", err)
+		fmt.Printf("Looks like we don't know whether Mercury is in retrograde: %v\n", err)
 		return
 	}
 
 	if ok {
-		fmt.Println("mercury is in retrograde!")
+		fmt.Println("Mercury is in retrograde!")
 		return
 	}
 
-	fmt.Println("mercury is not in retrograde!")
+	fmt.Println("Mercury is not in retrograde!")
 }
