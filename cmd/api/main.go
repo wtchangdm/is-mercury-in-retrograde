@@ -40,7 +40,7 @@ func retrogradeHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func Serve() {
-	http.HandleFunc("/ismercuryInRetrograde", retrogradeHandler)
-	fmt.Println("Try API at http://localhost:8080/ismercuryInRetrograde.")
+	http.HandleFunc("/isMercuryInRetrograde", retrogradeHandler)
+	fmt.Println("Try API at http://localhost:8080/isMercuryInRetrograde.")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
