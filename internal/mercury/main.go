@@ -52,7 +52,7 @@ func (m *mercury) Retrograde() (bool, error) {
 
 	answer := parse(doc)
 
-	return answer == "yes", err
+	return answer == "yes", nil
 }
 
 func New() *mercury {
