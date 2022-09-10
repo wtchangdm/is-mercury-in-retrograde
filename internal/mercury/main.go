@@ -52,6 +52,10 @@ func (m *mercury) Retrograde() (bool, error) {
 
 	answer := parse(doc)
 
+	if len(answer) == 0 {
+		return false, fmt.Errorf("can't find answer after parsing")
+	}
+
 	return answer == "yes", nil
 }
 
