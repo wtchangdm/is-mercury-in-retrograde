@@ -10,7 +10,7 @@ import (
 )
 
 type responsePayload struct {
-	IsmercuryInRetrograde bool `json:"ismercuryInRetrograde"`
+	IsmercuryInRetrograde bool `json:"isMercuryInRetrograde"`
 }
 
 type errorPayload struct {
