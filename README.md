@@ -16,7 +16,7 @@ Or use pre-build OCI image: `wtchangdm/is-mercury-in-retrograde`
 $ docker run --rm -it is-mercury-in-retrograde
 ```
 
-## Run as API
+### Run as API
 
 ```bash
 $ docker run --rm -it -p 8080:8080 is-mercury-in-retrograde --server
