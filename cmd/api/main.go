@@ -20,7 +20,7 @@ type errorPayload struct {
 func retrogradeHandler(w http.ResponseWriter, r *http.Request) {
 	var payload interface{}
 	m := mercury.New()
-	ok, err := m.Retrograde()
+	doomed, err := m.Retrograde()
 
 	w.Header().Set("Content-Type", "application/json; charset=utf-8")
 
@@ -31,7 +31,7 @@ func retrogradeHandler(w http.ResponseWriter, r *http.Request) {
 		}
 	} else {
 		payload = &responsePayload{
-			IsMercuryInRetrograde: ok,
+			IsMercuryInRetrograde: doomed,
 		}
 	}
 

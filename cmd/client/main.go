@@ -8,14 +8,14 @@ import (
 
 func Do() {
 	m := mercury.New()
-	ok, err := m.Retrograde()
+	doomed, err := m.Retrograde()
 
 	if err != nil {
 		fmt.Printf("Looks like we don't know whether Mercury is in retrograde: %v\n", err)
 		return
 	}
 
-	if ok {
+	if doomed {
 		fmt.Println("Mercury is in retrograde!")
 		return
 	}
