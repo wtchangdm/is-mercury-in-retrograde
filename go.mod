@@ -1,5 +1,5 @@
 module github.com/wtchangdm/is-mercury-in-retrograde
 
-go 1.19
+go 1.25.0
 
-require golang.org/x/net v0.38.0
+require golang.org/x/net v0.55.0
